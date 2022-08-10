@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/login (1).jpg" type="image/icon type">
+    <link rel="icon" href="images" type="image/icon type">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="home min-vh-100 d-flex justify-content-center align-items-center flex-column">
+    <div class="container" id="sign">
+        <div class="sign m-auto  text-center d-flex justify-content-center align-items-center flex-column py-5">
+          <h1 class="text-white">SignUp</h1>
+             
+            
+            <input type="email" class="emailInput form-control w-75 mt-5" id="emailSign" required placeholder="&#xf0e0; &nbsp; Your Email" style="font-family: Arial,fontAwesome;">
+             <div class="alert-danger w-75 rounded-3 d-none" id="signEmailDanger">Invalid Email Address!(email must contain @gmail.com or @yahoo.com)ex: someone@gmail.com</div>
+            
+            
+             <input type="text" class="userInput form-control w-75 mt-4" id="userName" required  placeholder="&#Xf007; &nbsp; Username"  style="font-family: Arial,fontAwesome;">
+             <div class="alert-danger w-75 d-none" id="nameDanger">
+                Username must start with  letter and contains at least 3 letters
+             </div>
+             
+             
+             <input type="password" class="passInput form-control mt-4 w-75" id="passSign" required  placeholder="&#Xf023; &nbsp; Password"  style="font-family: Arial,fontAwesome;">
+              <div class="alert-danger w-75 d-none" id="passDanger">
+                Password must be 5 charachters at least can't contain special charachters
+              </div>
+            
+            
+              <p class="text-danger mt-4 d-none" id="requireInfo">All info are required</p>
+             <p class="text-danger mt-4 d-none" id="emailExist">This Email already exists, Please try again! </p>
+             <p class="text-danger mt-4 d-none" id="tryAgain">Try Again Message</p>
+             <button  class="btn mt-3 bg-green w-75 text-white" onclick="signUp()"  id="confirmBtn">Confirm</button>
+        </div>
+       <h5 class="text-white text-center mt-5">  Don't Have Account? <a href="index.html" id="loginLink" class="loginLink">Log In Now!</a></h5>
+     
+    </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

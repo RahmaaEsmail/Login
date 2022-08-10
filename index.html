@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/login (1).jpg" type="image/icon type">
+    <link rel="icon" href="images" type="image/icon type">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="home min-vh-100 d-flex justify-content-center align-items-center flex-column">
+        <div class="container" id="login">
+           <div class="login m-auto  text-center d-flex justify-content-center align-items-center flex-column py-5">
+             <h1 class="text-white">Login</h1>
+                <input type="email" class="emailInput form-control w-75 mt-5" id="emailLogin" placeholder="&#xf0e0; &nbsp; Your Email..." style="font-family: Arial,fontAwesome;" >
+                <input type="password" class="passInput form-control mt-4 w-75" id="passLogin" placeholder="&#Xf023; &nbsp; Password..." style="font-family: Arial,fontAwesome;">
+                 <p class="text-danger mt-3 d-none" id="loginRequire">All info are required</p>
+                 <p class="text-danger mt-3 d-none" id="invalidInfo">invalid email or password
+                  Please try again!</p>
+                <a  onclick="Login()" class="btn mt-4 bg-green w-75 text-white"   id="loginBtn">Log In</a>
+           </div>
+          <h5 class="text-white text-center mt-5">  Don't Have Account? <a href="signUp.html" id="signLink" class="signLink">Sign Up Now!</a></h5>
+        </div>
+    </div>
+    
+  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
